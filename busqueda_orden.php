@@ -38,7 +38,7 @@
           <div class="form-group ">
             <input type="text" class="form-control" placeholder="Ingresa el nombre" name="nombreCliente" required>
           </div>
-            <button type="submit" class="btn btn-info">Buscar</button>
+            <button type="submit" class="btn btn-info">Ir</button>
         </form>      
     </ul>
     </div>    
