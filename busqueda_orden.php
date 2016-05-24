@@ -46,7 +46,7 @@
 <!-- Aquí termina el menú-->
 <div class="row-fluid pad_general">
 <!--************************FORM********************-->
-    <form  class="form-horizontal" method="POST" action="orden_de_venta.php">
+    <form  class="form-horizontal" method="POST" action="orden_venta.php">
        <div class="form-group">    
           <div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4">
               <input type="text" class="form-control" placeholder="ID" name="idCliente" required>

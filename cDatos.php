@@ -1,10 +1,10 @@
-<?php
+<?php    
 	/********CONEXION*********/
 	//Creamos las variables con los datos
 	$host = "localhost";
 	$user = "root";
-	$pass = "n0m3l0";
-	//$pass = "nomeacuerdo";
+	//$pass = "n0m3l0";
+	$pass = "nomeacuerdo";
 	$database_name = "visionyestilo";
 
 	#MySQL
@@ -17,5 +17,8 @@
 	#MySQLi
 
 	$conexion = mysqli_connect($host, $user, $pass, $database_name) or die("Ira men deja te etsplico que no se pudo coneptar");
+    
+    $seleccion_cliente = "SELECT * FROM clientes WHERE idCliente = '$_POST[idCliente]'";
 
+    $registro = mysqli_query($conexion, $seleccion_cliente);
 ?>

@@ -10,7 +10,7 @@
          else
          {#ELSE CAMPO VACÍO         	
             require("cDatos.php");
-            $registro = mysqli_query($conexion, "SELECT * FROM clientes WHERE idCliente = '$_POST[idCliente]'");
+            
             $reg  = mysqli_fetch_array($registro);
 			if (!is_null($reg)) 
 			{#IF REGISTRO

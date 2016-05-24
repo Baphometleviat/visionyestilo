@@ -1,6 +1,15 @@
 body
 {
-	padding-bottom: 70px;
+	padding-bottom: 70px;    
+}
+
+.topless{
+    padding-top: 0px;
+    background-color: #4CAF50;
+}
+
+.bottomless{
+    padding-bottom: 0px;
 }
 
 .pad_top{
@@ -20,18 +29,48 @@ body
 	padding-top: 40px;
 }
 
-hr
-{
-	width: 80%;
-	border: 0; 
-	height: 1px; 
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-td, th
-{	
-	padding-top: 10px;
-    padding-left:10px;
-    padding-right:20px;    	
+th, td {
+    text-align: center;
+    padding: 10px;    
+    background-color: #f2f2f2;
 }
 
+th {
+    background-color: #00ace6;
+    color: white;
+}
+
+.jumbotron{
+    background-color: #00ace6;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.fondo_negro{
+    background-color: #000;
+    color: white;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+}
+
+.fondo_rojo{        
+    background-color: red;
+    width: 700px;
+    height: 100px
+}
+
+/*
+LINKS
+https://www.youtube.com/watch?v=sOyA84uhoCQ
+http://www.w3schools.com/jsref/prop_style_display.asp
+https://norfipc.com/inf/javascript-como-ocultar-mostrar-elementos-paginas-web.html
+
+*/
