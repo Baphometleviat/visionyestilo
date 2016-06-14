@@ -117,8 +117,8 @@
       </div>
       <div class="form-group">
          <label for="referencias" class="col-md-offset-1 col-md-1 control-label">Referencias</label>
-         <div class="col-md-2">
-            <textarea class="form-control" id="referencias" placeholder="Referencias" rows="10" name="referencias"></textarea>
+         <div class="col-md-8">
+            <textarea class="form-control" id="referencias" placeholder="Referencias" rows="5" name="referencias"></textarea>
           </div>
       </div>
       <center><button type="submit" class ="btn btn-success" name="submit">Aceptar</button>&nbsp;&nbsp;&nbsp;
