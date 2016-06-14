@@ -76,9 +76,7 @@
           <div class="col-md-2" >
             <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
           </div>
-      </div>
-     <center><h3>Dirección</h3></center>
-     <hr>  
+      </div>     
       <div class="form-group">
           <label for="calle" class="col-md-offset-1 col-md-1 control-label">Calle*</label>
           <div class="col-md-2">
@@ -118,9 +116,9 @@
           </div>          
       </div>
       <div class="form-group">
-         <label for="referencias" class="col-md-offset-4 col-md-1 control-label">Referencias</label>
+         <label for="referencias" class="col-md-offset-1 col-md-1 control-label">Referencias</label>
          <div class="col-md-2">
-            <textarea class="form-control" id="referencias" placeholder="Referencias" rows="5" name="referencias"></textarea>
+            <textarea class="form-control" id="referencias" placeholder="Referencias" rows="10" name="referencias"></textarea>
           </div>
       </div>
       <center><button type="submit" class ="btn btn-success" name="submit">Aceptar</button>&nbsp;&nbsp;&nbsp;
