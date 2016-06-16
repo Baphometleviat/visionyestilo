@@ -70,8 +70,9 @@
             <h2>Orden de venta</h2>
             <h3><?php echo"$nombre"?>&nbsp;&nbsp;<?php echo"$aPat"?>&nbsp;&nbsp;<?php echo"$aMat"?></h3> </div>
         <!--JUMBOTRON-->
+        
         <!--DIV TABLA-->
-        <div id="text-center topless">
+        <div class="text-center topless table-responsive bottom_space">
             <table>
                 <tr>
                     <th>    </th>
@@ -171,12 +172,15 @@
         </div>
         <!--DIV TABLA-->
         <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
-        <div class="container-fluid fondo_negro ">            
-            <div class="fondo_rojo">
-                Hola
-            </div>
+            <div class="panel-heading">Elige el tipo de lente</div>
+            <div class="panel-body">Panel Content</div>
         </div>
         <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
 <!-- Aquí termina la página-->
     </body>
 </html>
+<!--div class="fondo_negro ">            
+            <div class="fondo_rojo">
+                Hola
+            </div>
+        </div-->

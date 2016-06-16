@@ -5,7 +5,6 @@ body
 
 .topless{
     padding-top: 0px;
-    background-color: #4CAF50;
 }
 
 .bottomless{
@@ -29,6 +28,10 @@ body
 	padding-top: 40px;
 }
 
+.bottom_space
+{
+    padding-bottom: 10px;
+}
 table {
     border-collapse: collapse;
     width: 40%;
@@ -50,7 +53,7 @@ th {
 .jumbotron{
     background-color: #00ace6;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 0px;    
 }
 
 .fondo_negro{
@@ -70,6 +73,7 @@ th {
 small{
     color: red;
 }
+
 /*
 LINKS
 https://www.youtube.com/watch?v=sOyA84uhoCQ
