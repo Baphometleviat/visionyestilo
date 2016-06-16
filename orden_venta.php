@@ -172,6 +172,7 @@
         </div>
         <!--DIV TABLA-->
         <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
+        <div class="panel panel-success text-center">
             <div class="panel-heading">Elige el tipo de lente</div>
             <div class="panel-body">Panel Content</div>
         </div>
