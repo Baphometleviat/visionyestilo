@@ -1,23 +1,3 @@
-<?php
-    if (isset($_POST['buscar'])){#IF ISSET BUSCAR
-        $campo = $_POST['idCliente'];
-        if(empty($campo)){#IF CAMPO VACÍO
-            header("Location: busqueda_orden.php");
-        }#IF CAMPO VACÍO
-        else{#ELSE CAMPO VACÍO
-            require("cDatos.php");
-            $reg = mysqli_fetch_array($registro);
-            if(!is_null($reg)){#IF REGISTRO                
-                $nombre = $reg['nombre'];
-                $aPat = $reg['apellidoPaterno']; 
-                $aMat = $reg['apellidoMaterno'];
-            }#IF REGISTRO
-            else{#ELSE REGISTRO
-                header("Location: busqueda_orden.php");
-            }#ELSE REGISTRO
-        }#ELSE CAMPO VACÍO
-    }#IF ISSET BUSCAR
-?>
 <!DOCTYPE HTML>
 <html>
     <head> 
@@ -30,8 +10,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/general.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/validar_botones.js"></script>
+        <script src="js/bootstrap.js"></script>        
     </head>
     <body>
         			<!-- Empiezaael menú-->
@@ -66,11 +45,32 @@
 <!-- Aquí termina el menú-->
 <!-- Aquí empieza la página-->
         <!--JUMBOTRON-->
+<?php
+    if (isset($_POST['buscar'])){#IF ISSET BUSCAR
+        $campo = $_POST['idCliente'];
+        if(empty($campo)){#IF CAMPO VACÍO
+            header("Location: busqueda_orden.php");
+        }#IF CAMPO VACÍO
+        else{#ELSE CAMPO VACÍO
+            require("cDatos.php");
+            $reg = mysqli_fetch_array($registro);
+            if(!is_null($reg)){#IF REGISTRO                
+                $nombre = $reg['nombre'];
+                $aPat = $reg['apellidoPaterno']; 
+                $aMat = $reg['apellidoMaterno'];
+            }#IF REGISTRO
+            else{#ELSE REGISTRO
+                header("Location: busqueda_orden.php");
+            }#ELSE REGISTRO
+        }#ELSE CAMPO VACÍO
+    }#IF ISSET BUSCAR
+?>
         <div class="jumbotron text-center bottomless">
             <h2>Orden de venta</h2>
-            <h3><?php echo"$nombre"?>&nbsp;&nbsp;<?php echo"$aPat"?>&nbsp;&nbsp;<?php echo"$aMat"?></h3> </div>
-        <!--JUMBOTRON-->
-        
+            <h3><?php echo"$nombre"?>&nbsp;&nbsp;<?php echo"$aPat"?>&nbsp;&nbsp;<?php echo"$aMat"?></h3>
+        </div>
+<form method="POST" action="venta_cerrada.php">
+        <!--JUMBOTRON-->        
         <!--DIV TABLA-->
         <div class="text-center topless table-responsive bottom_space">
             <table>
@@ -171,12 +171,41 @@
             </table>
         </div>
         <!--DIV TABLA-->
+        <div class="text-center bottom_space"><h3>Eljie un tipo de lente</h3></div>
         <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
-        <div class="panel panel-success text-center">
-            <div class="panel-heading">Elige el tipo de lente</div>
-            <div class="panel-body">Panel Content</div>
-        </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12">
+  			       <input type="radio" name="tipo_lente" id="monofocal" value="Monofocal" >
+  			       <label class="pad_left">  				
+				        Monofocal    			
+  			       </label>
+		     </div>
+             <div class="col-md-2 col-sm-4 col-xs-12">
+			         <input type="radio" name="tipo_lente" id="bifocalFT" value="Bifocal FT">
+			         <label class="pad_left">  				
+    			         Bifocal FT
+  			       </label>	
+             </div>
+             <div class="col-md-2 col-sm-4 col-xs-12">
+			         <input type="radio" name="tipo_lente" id="bifocalInv" value="Bifocal Invisible" >
+			         <label class="pad_left">
+    			         Bifocal Inv
+  			           </label>
+		      </div>
+		      <div class="col-md-2 col-sm-4 col-xs-12">
+			         <input type="radio" name="tipo_lente" id="progresivo" value="Progresivo" >
+			         <label class="pad_left">  				
+    			         Progresivo
+  			         </label>
+		      </div>
+		      <div class="col-md-2 col-sm-4 col-xs-12">
+			         <input type="radio" name="tipo_lente" id="contacto" value="Contacto" >
+			         <label class="pad_left">
+                         Contacto
+                     </label>
+             </div>
+            
         <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
+</form>
 <!-- Aquí termina la página-->
     </body>
 </html>
