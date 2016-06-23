@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/general.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/mostrar_divs.js"></script>
     </head>
-    <body>
+    <body onload="crear_variables()">
         			<!-- Empiezaael menú-->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <!-- Esta es la marca y el ícono de hamburguesa en el responsivo ¡¡NO LO QUITES PENDEJIN!! -->
@@ -171,46 +173,85 @@
             </table>
         </div>
         <!--DIV TABLA-->
-        <div class="text-center bottom_space"><h3>Eljie un tipo de lente</h3></div>
-        <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
-            <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12">
-  			       <input type="radio" name="tipo_lente" id="monofocal" value="Monofocal" >
+    <!--DIV DE LOS TIPOS DE LENTE-->
+    <div class="container-fluid">
+        <div class="text-center bottom_space"><h3>Elije un tipo de lente</h3></div>
+            <div class="col-md-2 col-md-offset-1 col-sm-offset-1 col-sm-2 col-xs-12">
+  			       <input type="radio" name="tipo_lente" id="monofocal" value="Monofocal" onchange="seleccionar_monofocal()">
   			       <label class="pad_left">  				
 				        Monofocal    			
   			       </label>
 		     </div>
-             <div class="col-md-2 col-sm-4 col-xs-12">
-			         <input type="radio" name="tipo_lente" id="bifocalFT" value="Bifocal FT">
+             <div class="col-md-2 col-sm-2 col-xs-12">
+			         <input type="radio" name="tipo_lente" id="bifocalFT" value="Bifocal FT" onchange="material_bifocalFT()">
 			         <label class="pad_left">  				
     			         Bifocal FT
   			       </label>	
              </div>
-             <div class="col-md-2 col-sm-4 col-xs-12">
+             <div class="col-md-2 col-sm-2 col-xs-12">
 			         <input type="radio" name="tipo_lente" id="bifocalInv" value="Bifocal Invisible" >
 			         <label class="pad_left">
     			         Bifocal Inv
   			           </label>
 		      </div>
-		      <div class="col-md-2 col-sm-4 col-xs-12">
+		      <div class="col-md-2 col-sm-2 col-xs-12">
 			         <input type="radio" name="tipo_lente" id="progresivo" value="Progresivo" >
 			         <label class="pad_left">  				
     			         Progresivo
   			         </label>
 		      </div>
-		      <div class="col-md-2 col-sm-4 col-xs-12">
+		      <div class="col-md-2 col-sm-2 col-xs-12">
 			         <input type="radio" name="tipo_lente" id="contacto" value="Contacto" >
 			         <label class="pad_left">
                          Contacto
                      </label>
              </div>
-            
-        <!--DIV DE LOS MATERIALES Y ESAS MADRES-->
+        </div>
+        <!--DIV DE LOS TIPOS DE LENTE-->
+        <!--DIV DE LOS MATERILES-->
+        <div class="container-fluid">
+            <div class="text-center bottom_space escondido" id="header_material"><h3>Ahora un material</h3></div>
+            <div class="bottom_space escondido" id="materiales_monofocales">
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="cristal" value="Cristal">
+                    <label class="pad_left">
+                        Cristal
+                    </label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="cr" value="CR">
+                    <label class="pad_left">
+                        CR
+                    </label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="asferico" value="Asferico">
+                    <label class="pad_left">
+                        Asférico
+                    </label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="hi_index" value="Hi Index">
+                    <label class="pad_left">
+                        Hi Index
+                    </label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="poli" value="Policarbonato">
+                    <label class="pad_left">
+                        Policarbonato
+                    </label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="radio" name="material" id="thin" value="Thin and Lite">
+                    <label class="pad_left">
+                        Thin and Lite
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--DIV DE LOS MATERILES-->
 </form>
 <!-- Aquí termina la página-->
     </body>
 </html>
-<!--div class="fondo_negro ">            
-            <div class="fondo_rojo">
-                Hola
-            </div>
-        </div-->
