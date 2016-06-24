@@ -177,31 +177,34 @@
     <div class="container-fluid">
         <div class="text-center bottom_space"><h3>Elije un tipo de lente</h3></div>
             <div class="col-md-2 col-md-offset-1 col-sm-offset-1 col-sm-2 col-xs-12">
-  			       <input type="radio" name="tipo_lente" id="monofocal" value="Monofocal" onchange="seleccionar_monofocal()">
+  			       <input type="radio" name="tipo_lente" id="monofocal" value="Monofocal" onchange="desplegar_monofocal()">
   			       <label class="pad_left">  				
 				        Monofocal    			
   			       </label>
 		     </div>
              <div class="col-md-2 col-sm-2 col-xs-12">
-			         <input type="radio" name="tipo_lente" id="bifocalFT" value="Bifocal FT" onchange="material_bifocalFT()">
+			         <input type="radio" name="tipo_lente" id="bifocalFT" value="Bifocal FT" onchange="desplegar_bifocalFT()">
 			         <label class="pad_left">  				
     			         Bifocal FT
   			       </label>	
              </div>
              <div class="col-md-2 col-sm-2 col-xs-12">
-			         <input type="radio" name="tipo_lente" id="bifocalInv" value="Bifocal Invisible" >
+			         <input type="radio" name="tipo_lente" id="bifocalInv" value="Bifocal Invisible"
+                     onchange="desplegar_bifocalInv()" >
 			         <label class="pad_left">
     			         Bifocal Inv
   			           </label>
 		      </div>
 		      <div class="col-md-2 col-sm-2 col-xs-12">
-			         <input type="radio" name="tipo_lente" id="progresivo" value="Progresivo" >
+			         <input type="radio" name="tipo_lente" id="progresivo" value="Progresivo"
+                     onchange="desplegar_progresivo()">
 			         <label class="pad_left">  				
     			         Progresivo
   			         </label>
 		      </div>
 		      <div class="col-md-2 col-sm-2 col-xs-12">
-			         <input type="radio" name="tipo_lente" id="contacto" value="Contacto" >
+			         <input type="radio" name="tipo_lente" id="contacto" value="Contacto" 
+                     onchange="desplegar_contacto()">
 			         <label class="pad_left">
                          Contacto
                      </label>
@@ -210,7 +213,10 @@
         <!--DIV DE LOS TIPOS DE LENTE-->
         <!--DIV DE LOS MATERILES-->
         <div class="container-fluid">
+            <!-- HEADER MATERIAL-->
             <div class="text-center bottom_space escondido" id="header_material"><h3>Ahora un material</h3></div>
+            <!-- HEADER MATERIAL-->
+            <!-- MATERIALES MONOFOCALES-->
             <div class="bottom_space escondido" id="materiales_monofocales">
                 <div class="col-md-2 col-sm-2 col-xs-12">
                     <input type="radio" name="material" id="cristal" value="Cristal">
@@ -249,6 +255,19 @@
                     </label>
                 </div>
             </div>
+            <!-- MATERIALES MONOFOCALES-->
+            <!-- MATERIALES BFT-->
+            <div class="bottom_space escondido" id="materiales_bifocalFT">Aquí van los materiales BFT </div>
+            <!-- MATERIALES BFT-->
+            <!-- MATERIALES BINV-->
+            <div class="bottom_space escondido" id="materiales_bifocalInv">Aquí van los materiales BINV </div>
+            <!-- MATERIALES BINV-->
+            <!-- MATERIALES PROGRESIVO-->
+            <div class="bottom_space escondido" id="materiales_progresivos">Aquí van los materiales PROGRESIVOS </div>
+            <!-- MATERIALES PROGRESIVO-->
+            <!-- MATERIALES CONTACTO-->
+            <div class="bottom_space escondido" id="materiales_contacto">Aquí van los materiales CONTACTO </div>
+            <!-- MATERIALES CONTACTO-->
         </div>
         <!--DIV DE LOS MATERILES-->
 </form>
