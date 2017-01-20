@@ -15,7 +15,7 @@
         <script src="js/mostrar_divs.js"></script>
     </head>
     <body onload="crear_variables()">
-        			<!-- Empiezaael menú-->
+        			<!-- Empieza ael menú-->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <!-- Esta es la marca y el ícono de hamburguesa en el responsivo ¡¡NO LO QUITES PENDEJIN!! -->
     <div class="navbar-header">

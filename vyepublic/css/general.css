@@ -1,0 +1,84 @@
+body
+{
+	padding-bottom: 70px;    
+}
+
+.topless{
+    padding-top: 0px;
+}
+
+.bottomless{
+    padding-bottom: 0px;
+}
+
+.pad_top{
+	padding-top: 30px;
+}
+.pad_span
+{
+	padding-right: 10px;
+}
+.pad_left
+{
+	padding-left: 10px;
+}
+
+.pad_general
+{
+	padding-top: 40px;
+}
+
+.bottom_space
+{
+    padding-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;    
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #00ace6;
+    color: white;
+}
+
+.jumbotron{
+    background-color: #00ace6;
+    color: white;
+    margin-bottom: 0px;    
+}
+
+.fondo_negro{
+    background-color: #000;
+    color: white;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+}
+
+.fondo_rojo{        
+    background-color: red;
+    width: 700px;
+    height: 100px
+}
+
+small{
+    color: red;
+}
+
+.escondido{
+    display: none;
+}
+/*
+LINKS
+
+
+*/
